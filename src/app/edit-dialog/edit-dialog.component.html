@@ -1,0 +1,10 @@
+<!-- Dialog template -->
+
+<h3 mat-dialog-title>
+   Hello User {{data.id}}.
+   Would you like to edit this info?
+</h3>
+<div mat-dialog-actions>
+    <button mat-button (click)="goToDataScreenPage()" >Yes, I'd like to!</button>
+    <button mat-button (click)="closeDialog()">Not yet.</button>
+</div>

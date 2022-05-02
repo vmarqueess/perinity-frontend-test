@@ -1,0 +1,21 @@
+mat-drawer-container {
+  display: block;
+  height: 100%;
+  }
+
+mat-list-item:hover{
+    cursor: pointer;
+}
+
+.whiteText{
+  color: white;
+}
+
+mat-drawer{
+  background-color: #7EBC0A;
+}
+
+.toolbarperinity {
+    margin-bottom: 0.1em;
+    background-color: #7EBC0A;
+}

@@ -1,0 +1,17 @@
+mat-card{
+    width: 100%;
+    height: fit-content;
+}
+
+.cardMargin{
+    margin-bottom: 5em;
+}
+
+.listMargins{
+    margin-top: 1em;
+}
+
+.btnAlign{
+    float: right;
+    margin-top: -4px;
+}

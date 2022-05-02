@@ -1,0 +1,21 @@
+<mat-toolbar class="toolbarperinity whiteText">
+    <button mat-icon-button (click)="sideMenuToggle(sideMenu)">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>
+        perinity Test
+    </span>
+</mat-toolbar>
+
+<mat-drawer-container>
+    <mat-drawer opened="false" mode="over" #sideMenu class="sideMenu">
+        <mat-list>
+            <mat-list-item class="whiteText" [routerLink]="['/welcome-page']" routerLinkActive="active" (click)="sideMenuToggle(sideMenu)" >Welcome page</mat-list-item>
+            <mat-list-item class="whiteText" [routerLink]="['/display-data']" routerLinkActive="active" (click)="sideMenuToggle(sideMenu)">Posts page</mat-list-item>
+            <mat-list-item class="whiteText" [routerLink]="['/thanks-page']" routerLinkActive="active" (click)="sideMenuToggle(sideMenu)">Thanks page</mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

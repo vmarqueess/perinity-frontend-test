@@ -1,0 +1,23 @@
+<form>
+    <mat-form-field>
+        <mat-label>Id: </mat-label>
+        <input type="text" matInput readonly value="{{itemData.id}}">
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    <mat-form-field class="editableData">
+        <mat-label>Title: </mat-label>
+        <input type="text" matInput value="{{itemData.title}}" #titleData>
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    <mat-form-field class="editableData">
+        <mat-label>Body: </mat-label>
+        <input type="text" matInput value="{{itemData.body}}" #bodyData>
+    </mat-form-field>
+
+    <button type="submit" (click)="applyChanges()" mat-raised-button>
+        Apply changes
+    </button>
+    <button mat-raised-button (click)="revertChanges()">
+        Clear changes
+    </button>
+</form>
